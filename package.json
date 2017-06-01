@@ -1,0 +1,17 @@
+{
+  "name": "trollbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "trollboxMonero.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autobahn": "^17.5.2",
+    "ent": "^2.2.0",
+    "irc": "^0.5.2",
+    "ws": "^3.0.0"
+  }
+}
