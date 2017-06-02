@@ -1,6 +1,7 @@
 // Poloniex Trollbox IRC Relay with filter
 const irc = require('irc');
 const WebSocket = require('ws');
+const ent = require('ent');
 
 // set it up
 const config = {
@@ -66,7 +67,7 @@ function messageReceived(data) {
     switch (data[0]) {
       case config.trollboxChannelId:
         const nick = data[2];
-        const msg = data[3];
+        const msg = ent.decode(data[3]);
         if (shouldCaptureMessage(nick, msg)) {
           say(nick, msg);
         }
