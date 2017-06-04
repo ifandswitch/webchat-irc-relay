@@ -9,7 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "autobahn": "^17.5.2",
     "ent": "^2.2.0",
     "irc": "^0.5.2",
     "ws": "^3.0.0"
