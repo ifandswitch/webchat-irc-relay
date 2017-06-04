@@ -36,7 +36,7 @@ const client = new irc.Client(config.network, config.botName, {
 });
 
 // create the socket
-const socket = new WebSocket('wss://api2.poloniex.com');
+const socket = new WebSocket(config.wsuri);
 
 // log errors from irc
 client.addListener('error', message => {
